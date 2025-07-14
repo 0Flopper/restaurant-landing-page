@@ -290,6 +290,23 @@ nav {
   color: #585858;
 }
 
+.footer-section-two {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+}
+.footer-section-columns span {
+  margin: 0.25rem 0rem;
+  font-weight: 600;
+  color: #4c4c4c;
+  cursor: pointer;
+}
+
 @media (max-width: 1000px) {
   .navbar-links-container a {
     margin-right: 1rem;
@@ -389,7 +406,16 @@ nav {
     margin-bottom: 0.8rem !important;
     text-align: center;
   }
-  
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .footer-section-two {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .footer-section-columns {
+    margin: 1rem 0rem;
+  }
   .App {
     max-width: 95vw;
   }
